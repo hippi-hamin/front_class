@@ -12,6 +12,8 @@
     <button onclick="fun1()">fun1 함수 호출</button>
     <button onclick="fun2()">fun2 함수 호출</button>
     <button onclick="fun3()">alert 함수 호출</button>
+    <button onclick="fun4()">confirm 함수 호출</button>
+    <button onclick="fun5()">prompt 함수 호출</button>
 </body>
 <script>     
     // fun1();
@@ -26,6 +28,19 @@
         let var1 = "alert 입니다."
         // alert("alert 입니다");
         alert(var1);
+    }
+    const fun4 = () => {
+        let result = confirm("선택해주세요");
+        console.log(result);
+        if (result) {
+            console.log("확인 클릭");
+        } else {
+            console.log("취소 클릭");
+        }
+    }
+    const fun5 = () => {
+        let value = prompt("입력해보세요")
+        console.log(value);
     }
 </script>
 </html>
