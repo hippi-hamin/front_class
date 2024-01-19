@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            display: flex;
+            background-color: rgb(181, 214, 163);
+            /* justify-content; 부모요소에서의 가로에 대한 배치 */
+            /* justify-content: flex-start; 왼쪽 정렬 */
+            /* justify-content: center; 가운데로 */
+            /* justify-content: flex-end; 오른쪽 정렬 */
+            /* justify-content: space-around; 균등 분할 */
+            /* justify-content: space-between; 브라우저 전체 활용 분할*/
+            justify-content: space-evenly; /* around랑 비슷 */
+        }
+
+        .container2 {
+            display: flex;
+            background-color: rgb(181, 214, 163);
+            padding: 30px;
+            height: 200px; 
+            /* align-items; 부모요소에서의 윗쪽, 세로에 대한 배치*/
+            align-items: flex-end;
+        }
+
+        .container1 div {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+
+        .container2 div {
+            width: 50px;
+            text-align: center;
+        }
+
+        .flex-container div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>flex align</h2>
+    <div class="container1 flex-container">
+        <div>
+            <p>1</p>
+        </div>
+        <div>
+            <p>2</p>
+        </div>
+        <div>
+            <p>3</p>    
+        </div>
+    </div>
+    <div class="container2 flex-container">
+        <div>
+            <p>1</p>
+        </div>
+        <div>
+            <p>2</p>
+        </div>
+        <div>
+            <p>3</p>    
+        </div>
+    </div>
+</body>
+</html>
